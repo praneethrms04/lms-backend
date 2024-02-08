@@ -20,7 +20,7 @@ const refreshTokenExpire = parseInt(
 	10
 );
 
-// options for cookies
+// options for cookies 5 mins
 
 export const accessTokenOptions: ITokenOptions = {
 	expires: new Date(Date.now() + accessTokenExpire * 60 * 60 * 1000),
@@ -69,3 +69,4 @@ export const sendToken = async (
 		accessToken,
 	});
 };
+
